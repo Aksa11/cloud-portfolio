@@ -29,3 +29,9 @@ I connected to an Ubuntu 24.04 EC2 Instance via SSH and executed the following s
 
 **⁍ Debugging:** Able to interpret HTTP status codes (200, 304, 404) to solve connectivity issues.
 
+
+** Screenshots include** 
+
+Main Image: The clean digital diagram (The "Final Product").
+Bottom of the page: "Initial brainstorming and whiteboard session." 
+
