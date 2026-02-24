@@ -35,3 +35,21 @@ I connected to an Ubuntu 24.04 EC2 Instance via SSH and executed the following s
 Main Image: The clean digital diagram (The "Final Product").
 Bottom of the page: "Initial brainstorming and whiteboard session." 
 
+
+### 📚 Learning Resources
+
+To complete this project, I utilized the following resources to ensure best practices:
+
+**○** Official AWS Documentation: Working with VPCs ( https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) -  Used for understanding CIDR blocks and routing.
+
+**○** AWS EC2: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+
+**○** SSH basics: https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys • Generate or download key pair when launching instance • Use ssh -i your-key.pem user@public-ip • Fix permission issues with chmod 400 your-key.pem if needed.
+
+**○** AWS EC2 + Nginx: https://docs.nginx.com/nginx/deployment-guides/amazon-web-services/ec2-instances-for-nginx/
+
+**○** AWS EC2 logs: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-console.html
+
+**○** Ubuntu Community Wiki: Nginx Guide ( https://www.google.com/search?q=https://ubuntu.com/server/docs/web-servers-nginx ) - Referenced for manual service management. 
+
+
