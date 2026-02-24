@@ -23,7 +23,9 @@ I connected to an Ubuntu 24.04 EC2 Instance via SSH and executed the following s
 
    
 ### 🔍 Key Takeaways
-⁍ CLI Proficiency: Comfortable navigating the Linux filesystem and managing root-level services.
-⁍ Cloud Fundamentals: Understanding how VPCs and Subnets isolate resources.
-⁍ Debugging: Able to interpret HTTP status codes (200, 304, 404) to solve connectivity issues.
+**⁍ CLI Proficiency**: Comfortable navigating the Linux filesystem and managing root-level services.
+
+⁍ **Cloud Fundamentals:** Understanding how VPCs and Subnets isolate resources.
+
+**⁍ Debugging:** Able to interpret HTTP status codes (200, 304, 404) to solve connectivity issues.
 
