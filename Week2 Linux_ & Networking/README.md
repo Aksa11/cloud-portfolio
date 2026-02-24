@@ -1,4 +1,4 @@
-# AWS Infrastructure Project: End-to-End Cloud Infrastructure Deployment Using AWS EC2, Nginx, and Linux Server Management**
+# AWS Infrastructure Project: End-to-End Cloud Infrastructure Deployment Using AWS EC2, Nginx, and Linux Server Management
 
 ### 📌 Project Goal
 
