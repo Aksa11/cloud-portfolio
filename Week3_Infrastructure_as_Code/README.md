@@ -39,3 +39,7 @@ The following AWS resources are managed by this code:
 * How to use **Data Sources** to reference existing AWS resources.
 * The importance of **Stateful Security Groups** in AWS.
 * How to link subnets to the internet using **Route Table Associations**.
+
+# 📚 Learning Resources
+
+Free Labs: https://kodekloud.com/free-labs/terraform https://collabnix.github.io/terraform/
