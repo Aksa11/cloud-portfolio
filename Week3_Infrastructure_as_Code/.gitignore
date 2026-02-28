@@ -1,4 +1,12 @@
+# Ignore the hidden plugins folder
 .terraform/
+
+# Ignore the state (memory) files
 *.tfstate
 *.tfstate.backup
+
+# Ignore the version lock file
 .terraform.lock.hcl
+
+# Ignore your private variables
+*.tfvars
