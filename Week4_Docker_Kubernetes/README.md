@@ -45,3 +45,12 @@ kubectl apply -f service.yaml
 
 ## Access the app
 minikube service weather-service --url
+
+
+## Learning Resources 
+https://kodekloud.com/free-labs/kubernetes
+https://labs.play-with-docker.com/
+https://github.com/docker/labs/tree/master/beginner
+https://minikube.sigs.k8s.io/docs/start/
+https://kubernetes.io/docs/tutorials/kubernetes-basics/
+https://kubernetes.io/docs/tutorials/hello-minikube/
