@@ -35,3 +35,6 @@ jobs:
         
       - name: Testing Secrets
         run: echo "My secret key is ${{ secrets.MY_AWS_KEY }}"
+        
+      - name: Lint Test
+        run: echo "Lint passed. I'm running now!"
