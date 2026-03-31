@@ -19,7 +19,6 @@ jobs:
         uses: yamllint .github/workflows/hello-world.yml
         
 # 2. THE MISSION: What should happen?
-jobs:
   say-hello:
     runs-on: ubuntu-latest  # Use a fresh Linux machine provided by GitHub
     needs: lint-yaml 
