@@ -1,3 +1,4 @@
+---
 name: My First Pipeline
 
 # 1. THE TRIGGER: Run this whenever I push code
@@ -7,7 +8,6 @@ on: [push]
 jobs: 
   lint-yaml:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -22,7 +22,6 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest  # Use a fresh Linux machine provided by GitHub
     needs: lint-yaml 
-    
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4  # Step 1: Grab my code files
