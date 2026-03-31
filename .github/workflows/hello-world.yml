@@ -3,10 +3,25 @@ name: My First Pipeline
 # 1. THE TRIGGER: Run this whenever I push code
 on: [push]
 
+# The New Lint job ( to detect syntax error early
+  lint-yaml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install yamillint
+        uses: sudo apt-get install -y yamllint
+
+      - name: Run lint check
+        uses: yamllint .github/workflows/hello-world.yml
+        
 # 2. THE MISSION: What should happen?
 jobs:
   say-hello:
     runs-on: ubuntu-latest  # Use a fresh Linux machine provided by GitHub
+    needs: lint-yaml 
     
     steps:
       - name: Checkout Code
