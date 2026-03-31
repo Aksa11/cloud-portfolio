@@ -6,7 +6,7 @@ on:
   push:
 
 # The New Lint job ( to detect syntax error early)
-jobs: 
+jobs:
   lint-yaml:
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +18,7 @@ jobs:
 
       - name: Run lint check
         run: yamllint .github/workflows/hello-world.yml
-        
+
   # 2. THE MISSION: What should happen?
   say-hello:
     runs-on: ubuntu-latest  # Use a fresh Linux machine provided by GitHub
@@ -32,9 +32,9 @@ jobs:
 
       - name: Show the Date
         run: date
-        
+
       - name: Testing Secrets
         run: echo "My secret key is ${{ secrets.MY_AWS_KEY }}"
-        
+
       - name: Lint Test
         run: echo "Lint passed. I'm running now!"
