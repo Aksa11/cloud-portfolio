@@ -19,4 +19,4 @@ jobs:
         run: date
         
        - name: Testing Secrets
-        run: echo "My secret key is ${{ secrets.MY_AWS_KEY }}"
+         run: echo "My secret key is ${{ secrets.MY_AWS_KEY }}"
