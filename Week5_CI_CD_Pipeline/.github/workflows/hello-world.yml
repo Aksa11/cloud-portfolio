@@ -1,1 +1,19 @@
+name: My First Pipeline
 
+# 1. THE TRIGGER: Run this whenever I push code
+on: [push]
+
+# 2. THE MISSION: What should happen?
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # Use a fresh Linux machine provided by GitHub
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4  # Step 1: Grab my code files
+
+      - name: Send a message
+        run: echo "Hello! My first GitHub Action is running successfully."
+
+      - name: Show the Date
+        run: date
