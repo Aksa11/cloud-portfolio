@@ -13,10 +13,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install yamillint
-        uses: sudo apt-get install -y yamllint
+        run: sudo apt-get install -y yamllint
 
       - name: Run lint check
-        uses: yamllint .github/workflows/hello-world.yml
+        run: yamllint .github/workflows/hello-world.yml
         
 # 2. THE MISSION: What should happen?
   say-hello:
