@@ -4,7 +4,7 @@ name: My First Pipeline
 # 1. THE TRIGGER: Run this whenever I push code
 on: [push]
 
-# The New Lint job ( to detect syntax error early
+# The New Lint job ( to detect syntax error early)
 jobs: 
   lint-yaml:
     runs-on: ubuntu-latest
@@ -18,10 +18,10 @@ jobs:
       - name: Run lint check
         run: yamllint .github/workflows/hello-world.yml
         
-# 2. THE MISSION: What should happen?
+  # 2. THE MISSION: What should happen?
   say-hello:
     runs-on: ubuntu-latest  # Use a fresh Linux machine provided by GitHub
-    needs: lint-yaml 
+    needs: lint-yaml
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4  # Step 1: Grab my code files
