@@ -2,7 +2,8 @@
 name: My First Pipeline
 
 # 1. THE TRIGGER: Run this whenever I push code
-on: [push]
+on:
+  push:
 
 # The New Lint job ( to detect syntax error early)
 jobs: 
