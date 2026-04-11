@@ -1,1 +1,25 @@
+name: My Auto Deploy
+on:
+  push:
+    branches: [ main ]  # This tells the robot: "Run whenever I push code"
 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v3
+
+      - name: Log into AWS and Update Website
+        uses: appleboy/ssh-action@master
+        with:
+          host: 18.175.236.223
+          username: ubuntu
+          key: ${{ secrets.CI_CD_PEM }} # This uses the secret you just saved!
+          script: |
+            cd ~/cloud-portfolio
+            git pull origin main
+            sudo docker build -t flask-app .
+            sudo docker stop flask-app-container || true
+            sudo docker rm flask-app-container || true
+            sudo docker run -d --name flask-app-container -p 5000:5000 flask-app
